@@ -1,0 +1,32 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,MAXIMUM_PACKAGE_HEIGHT,STANDARD,PARTREV,MANUFACTURER,Component Link 1 URL,Component Link 1 Description,VBRDSS Min V,VGSth Max V,category,imported,Coss Typ pF,Channel Polarity,ciiva ids,Packing,Package Type,Configuration,release date,rohs,vault revision,VGS Max V,Component Link 3 Description,Package Description,manufacturer,library id,package,Ciss Typ pF,Crss Typ pF,Mounting Technology,Component Link 3 URL
+1,Unpolarized capacitor,C,C1,0.1uF/16V,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2,Unpolarized capacitor,C,C4 C5 C6 C7 C8 C9 C10,1uF/25V,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,7,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3,Unpolarized capacitor,C,C2,1uF/6.3V,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4,Unpolarized capacitor,C,C3,4.7uF/25V,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5,"Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x01,J4,Conn_02x01,PinHeader_2x01_P2.54mm_Vertical,1,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+6,"Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x06_Odd_Even,J1,Conn_02x06_Odd_Even,PinHeader_2x06_P2.54mm_Vertical,1,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+7,,FH34SRJ-24S-0.5SH(99),J3,FH34SRJ-24S-0.5SH(99),HRS_FH34SRJ-24S-0.5SH(99),1,,1.75mm,Manufacturer Recommendations,NA,HIROSE ELECTRIC,,,,,,,,,,,,,,,,,,,,,,,,,
+8,Micro SD Card Socket,Micro_SD_Card,J2,Micro_SD_Card,microSD_HC_Hirose_DM3D-SF,1,http://katalog.we-online.de/em/datasheet/693072010801.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+9,Inductor,L,L1,10uH,L_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+10,MCH3478-TL-H,MCH3478-TL-H,Q1,MCH3478-TL-W,On_Semiconductor-MCH3478-TL-H-Manufacturer_Recommended,1,http://www.onsemi.cn/pub_link/Collateral/ENAA1353-D.PDF,,,,,http://www.onsemi.com/,Manufacturer URL,30,1.3,Trans,yes,21,N Channel,837008,Tape and Reel,SC-70FL / MCPH-3,Single,1407149804,No,4F433114-B412-42D1-93FA-4D10C81BF666,12,Package Specification,"3-Pin Small Outline Transistor, Body 2 x 1.6 mm, Pitch 0.65 mm",On Semiconductor,1afd2ccbcc2ba532,MCPH-3,130,14,Surface Mount,http://www.onsemi.com/pub_link/Collateral/EN7354-D.PDF
+11,"-3.7A Id, -8V Vds, P-Channel MOSFET, SOT-23",NTR2101P,Q2,NTR2101P,SOT-23,1,http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+12,Resistor,R,R1,0.47ohm,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13,,BBQ10KBD,U2,BBQ10KBD,BM14B(0.8)-24DS-0.4V(53),1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+14,Skylab 802.11b/g/n Module,SKW92A,U1,SKW92A,SKYLAB_SKW92A,1,http://www.skylab.com.cn/uploadfile/Download/SkyLab_SKW92A_V1.04_datasheet.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+15,,SS2040FL,U3 U4 U5,SS2040FL,SOD-123FL,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+
+
+
+Component Groups:,15
+Component Count:,23
+Fitted Components:,23
+Number of PCBs:,1
+Total components:,23
+Schematic Version:,
+Schematic Date:,
+PCB Variant:,default
+BoM Date:,"Sunday, February 28, 2021 at 01:30:17 PM"
+Schematic Source:,Meshinger.sch
+KiCad Version:,Eeschema (5.1.9-0-10_14)

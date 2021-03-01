@@ -1,0 +1,99 @@
+
+(rules PCB Meshinger
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3605)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+  )
+  (rule
+    (width 152.4)
+    (clear 152.6)
+    (clear 76.2 (type smd_to_turn_gap))
+    (clear 38.2 (type smd_smd))
+  )
+  (padstack "Via[0-1]_685.8:330.2_um"
+    (shape
+      (circle F.Cu 685.8 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 685.8 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_685.8:330.2_um" "Via[0-1]_685.8:330.2_um" default
+  )
+  (via 
+    "Via[0-1]_685.8:330.2_um-kicad_default" "Via[0-1]_685.8:330.2_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_685.8:330.2_um-Power" "Via[0-1]_685.8:330.2_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_685.8:330.2_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_685.8:330.2_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_685.8:330.2_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C3-Pad2)" "Net-(C3-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad1)" "Net-(C6-Pad2)" "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(C9-Pad1)"
+    "Net-(C10-Pad1)" "HW_RESET" "LAN1_TX-" "LAN1_RX-" "LAN1_TX+" "LAN1_RX+" "USB-" USB+
+    "UART_TX" "UART_RX" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(J2-Pad8)"
+    "Net-(J3-Pad19)" "SPI_MOSI" "SPI_CLK" "EINK_CHIP_SELECT" "EINK_DATA_COMMAND" "EINK_DISPLAY_RESET" "EINK_DISPLAY_BUSY" "Net-(J3-Pad7)"
+    "Net-(J3-Pad6)" "Net-(J3-Pad4)" "Net-(J3-Pad3)" "Net-(J3-Pad2)" "Net-(J3-Pad1)" ROW1 ROW2 ROW3
+    ROW4 ROW5 ROW6 LED0 LED1 LED2 LED3 ROW7
+    PWM COL5 COL4 COL3 COL2 COL1 GPIO "Net-(Q2-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    +3V3 "Display_Power_Switch" GND
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 348.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

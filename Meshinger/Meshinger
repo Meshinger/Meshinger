@@ -1,0 +1,32 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/Users/awgh/Documents/Meshinger/Meshinger/Meshinger.sch</h1>
+    <p>Friday, February 26, 2021 at 04:05:56 PM</p>
+    <p>Eeschema (5.1.9-0-10_14)</p>
+    <p><b>Component Count:</b>23</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1</td><td>1</td><td>0.1uF/16V</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C2</td><td>1</td><td>1uF/6.3V</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C3</td><td>1</td><td>4.7uF/25V</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C4, C5, C6, C7, C8, C9, C10</td><td>7</td><td>1uF/25V</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>FH34SRJ-24S-0.5SH(99)</td><td>FH34SRJ-24S:FH34SRJ-24S-0.5SH(99)</td><td>FH34SRJ-24S:HRS_FH34SRJ-24S-0.5SH(99)</td><td></td><td></td></tr>
+    <tr><td>J2</td><td>1</td><td>Conn_02x07_Odd_Even</td><td>Connector_Generic:Conn_02x07_Odd_Even</td><td>Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical</td><td>Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J3</td><td>1</td><td>Micro_SD_Card</td><td>Connector:Micro_SD_Card</td><td>Connector_Card:microSD_HC_Hirose_DM3D-SF</td><td>Micro SD Card Socket</td><td></td></tr>
+    <tr><td>L1</td><td>1</td><td>10uH</td><td>Device:L</td><td>Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder</td><td>Inductor</td><td></td></tr>
+    <tr><td>Q1</td><td>1</td><td>MCH3478-TL-W</td><td>MCH3478-TL-W:MCH3478-TL-H</td><td>On_Semiconductor-MCH3478-TL-H-*</td><td>MCH3478-TL-H</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>0.47ohm</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>U1, U7</td><td>2</td><td>SKW92A</td><td>SKW92A:SKW92A</td><td>SKW92A:SKYLAB_SKW92A</td><td>Skylab 802.11b/g/n Module</td><td></td></tr>
+    <tr><td>U2, U6</td><td>2</td><td>BBQ10KBD</td><td>Keyboard:BBQ10KBD</td><td>BBQ10KBD:BM14B(0.8)-24DS-0.4V(53)</td><td></td><td></td></tr>
+    <tr><td>U3, U4, U5</td><td>3</td><td>SS2040FL</td><td>SS2040FL:SS2040FL</td><td>SOD-123FL</td><td></td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name Keyboard)(type Legacy)(uri /Users/awgh/Documents/Meshinger/3rdparty/BBQ10KBD/kicad/library/Keyboard.lib)(options "")(descr ""))
+  (lib (name SKW92A)(type Legacy)(uri /Users/awgh/Documents/Meshinger/3rdparty/SKW92A/SKW92A.lib)(options Legacy)(descr ""))
+  (lib (name FH34SRJ-24S)(type Legacy)(uri /Users/awgh/Documents/Meshinger/3rdparty/FH34SRJ-24S-0.5SH_99_/FH34SRJ-24S-0.5SH_99_.lib)(options "")(descr ""))
+  (lib (name MCH3478-TL-W)(type Legacy)(uri "/Users/awgh/Documents/Meshinger/3rdparty/Trans_On Semiconductor_MCH3478-TL-H/eec.lib")(options "")(descr ""))
+  (lib (name SS2040FL)(type Legacy)(uri /Users/awgh/Documents/Meshinger/3rdparty/SS2040FL/SS2040FL.lib)(options "")(descr ""))
+)

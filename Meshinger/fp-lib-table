@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name SKW92A)(type KiCad)(uri /Users/awgh/Documents/Meshinger/3rdparty/SKW92A)(options "")(descr ""))
+  (lib (name FH34SRJ-24S)(type KiCad)(uri /Users/awgh/Documents/Meshinger/3rdparty/FH34SRJ-24S-0.5SH_99_)(options "")(descr ""))
+  (lib (name BBQ10KBD)(type KiCad)(uri /Users/awgh/Documents/Meshinger/3rdparty/BBQ10KBD/kicad/modules/Connectors_Hirose_extra.pretty)(options "")(descr ""))
+  (lib (name MCH3478-TL-W)(type KiCad)(uri "/Users/awgh/Documents/Meshinger/3rdparty/Trans_On Semiconductor_MCH3478-TL-H/eec.pretty")(options "")(descr ""))
+  (lib (name SS2040FL)(type KiCad)(uri /Users/awgh/Documents/Meshinger/3rdparty/SS2040FL)(options "")(descr ""))
+  (lib (name Logo)(type KiCad)(uri /Users/awgh/Documents/Meshinger/Logo)(options "")(descr ""))
+)
