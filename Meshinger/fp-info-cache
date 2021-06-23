@@ -1,4 +1,4 @@
-19093002078242322
+19104331073428743
 BBQ10KBD
 BM14B(0.8)-24DS-0.4V(53)
 
@@ -51681,6 +51681,13 @@ heatsink
 2
 1
 Inductor_SMD
+IND_LQH44PN100MJ0L
+
+
+0
+2
+2
+Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
 Choke SMD
@@ -76341,6 +76348,48 @@ ROHM PMDSJEDEC  SOD-106
 0
 2
 2
+SamacSys_Parts
+1043
+1043-3
+Undefined or Miscellaneous
+0
+5
+5
+SamacSys_Parts
+BGA6C40P2X3_86X116X62
+FAN53610AUC33X
+Integrated Circuit
+0
+6
+6
+SamacSys_Parts
+LQH44PN100MP0L
+1515 (4040) T=1.65±0.15mm
+Inductor
+0
+2
+2
+SamacSys_Parts
+LQM2MPN1R0NG0L
+0806 (2016) T=0.9±0.1mm
+Inductor
+0
+2
+2
+SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+PJ079BH
+PJ-079BH-1
+Connector
+0
+5
+5
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf

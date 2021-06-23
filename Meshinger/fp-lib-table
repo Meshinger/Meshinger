@@ -5,4 +5,5 @@
   (lib (name MCH3478-TL-W)(type KiCad)(uri "/Users/awgh/Documents/Meshinger/3rdparty/Trans_On Semiconductor_MCH3478-TL-H/eec.pretty")(options "")(descr ""))
   (lib (name SS2040FL)(type KiCad)(uri /Users/awgh/Documents/Meshinger/3rdparty/SS2040FL)(options "")(descr ""))
   (lib (name Logo)(type KiCad)(uri /Users/awgh/Documents/Meshinger/Logo)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri /Users/awgh/Documents/Meshinger/3rdparty/SamacSys_Parts.pretty)(options "")(descr ""))
 )

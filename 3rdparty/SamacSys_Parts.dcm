@@ -1,0 +1,45 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP FAN53610AUC33X
+D Switching Voltage Regulators 3MHz, 1A Sync Buck Regulator
+K
+F https://www.onsemi.com/pub/Collateral/FAN53610-D.pdf
+$ENDCMP
+#
+$CMP LQH44PN1R0NP0L
+D LQH44PN_P0 Series Inductor 1.0uH +/-30% 1515 (4040)
+K
+F https://psearch.en.murata.com/inductor/product/LQH44PN1R0NP0%23.html
+$ENDCMP
+#
+$CMP PJ-079BH
+D DC Power Connectors power jack, 2.5 x 5.8 mm, horizontal, through hole, high current, w/ shielding,1 switch
+K
+F 
+$ENDCMP
+#
+$CMP LQM2MPN1R0MGHL
+D LQM2MPN_GH Series Inductor 1.0uH +/-20% 0806 (2016)
+K
+F https://componentsearchengine.com/Datasheets/1/LQM2MPN1R0MGHL.pdf
+$ENDCMP
+#
+$CMP 1043
+D KEYSTONE - 1043 - BATTERY HOLDER, 18650, TH
+K
+F http://www.keyelco.com/product-pdf.cfm?p=919
+$ENDCMP
+#
+$CMP SS-52100-001
+D STEWART CONNECTOR - SS-52100-001 - USB CONN, 2.0 TYPE A, RCPT, 4POS, TH
+K
+F https://componentsearchengine.com/Datasheets/1/SS-52100-001.pdf
+$ENDCMP
+#
+#End Doc Library

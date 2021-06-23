@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 3605)
+    (start_pass_no 6335)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.1)
+      (against_preferred_direction_trace_costs 2.2)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.9)
+      (against_preferred_direction_trace_costs 1.8)
     )
   )
   (rule
@@ -76,6 +76,8 @@
     "Net-(J3-Pad6)" "Net-(J3-Pad4)" "Net-(J3-Pad3)" "Net-(J3-Pad2)" "Net-(J3-Pad1)" ROW1 ROW2 ROW3
     ROW4 ROW5 ROW6 LED0 LED1 LED2 LED3 ROW7
     PWM COL5 COL4 COL3 COL2 COL1 GPIO "Net-(Q2-Pad1)"
+    "Net-(C11-Pad1)" "Net-(IC1-PadB1)" "Net-(J5-PadL2)" "Net-(J5-PadL1)" "Net-(J5-PadR7)" "Net-(U6-PadMH3)" "Net-(U6-PadMH2)" "Net-(U6-PadMH1)"
+    "Net-(U7-PadMH3)" "Net-(U7-PadMH2)" "Net-(U7-PadMH1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -86,7 +88,7 @@
     )
   )
   (class Power
-    +3V3 "Display_Power_Switch" GND
+    +3V3 "Display_Power_Switch" GND BAT+ "BAT-"
     (clearance_class Power)
     (via_rule Power)
     (rule

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -183,25 +183,6 @@ Wire Wire Line
 	8500 850  8500 2500
 Wire Wire Line
 	8600 700  8600 2500
-$Comp
-L power:GND #PWR0114
-U 1 1 6043F178
-P 1950 6850
-F 0 "#PWR0114" H 1950 6600 50  0001 C CNN
-F 1 "GND" H 1955 6677 50  0000 C CNN
-F 2 "" H 1950 6850 50  0001 C CNN
-F 3 "" H 1950 6850 50  0001 C CNN
-	1    1950 6850
-	-1   0    0    1   
-$EndComp
-Text GLabel 1900 7350 0    50   BiDi ~ 0
-UART_RX
-Text GLabel 3000 7350 2    50   BiDi ~ 0
-UART_TX
-Wire Wire Line
-	1950 6850 2250 6850
-Wire Wire Line
-	2750 6850 3050 6850
 Text GLabel 6800 3450 0    50   BiDi ~ 0
 UART_RX
 Text GLabel 6800 3550 0    50   BiDi ~ 0
@@ -239,14 +220,6 @@ Wire Wire Line
 	7900 2500 7900 2200
 Wire Wire Line
 	7900 2200 7650 2200
-Text GLabel 3050 6950 2    50   BiDi ~ 0
-USB+
-Text GLabel 3050 7050 2    50   BiDi ~ 0
-USB-
-Wire Wire Line
-	2750 6950 3050 6950
-Wire Wire Line
-	2750 7050 3050 7050
 Text GLabel 9300 1750 2    50   BiDi ~ 0
 LAN1_TX-
 Text GLabel 9400 1900 2    50   BiDi ~ 0
@@ -263,22 +236,6 @@ Wire Wire Line
 	9400 1900 9400 2500
 Wire Wire Line
 	9300 1750 9300 2500
-Text GLabel 1900 7250 0    50   BiDi ~ 0
-LAN1_RX+
-Text GLabel 1900 7150 0    50   BiDi ~ 0
-LAN1_RX-
-Text GLabel 1900 7050 0    50   BiDi ~ 0
-LAN1_TX+
-Text GLabel 1900 6950 0    50   BiDi ~ 0
-LAN1_TX-
-Wire Wire Line
-	1900 7150 2250 7150
-Wire Wire Line
-	1900 7250 2250 7250
-Wire Wire Line
-	2750 7150 3000 7150
-Wire Wire Line
-	2750 7250 3000 7250
 Wire Wire Line
 	9500 4300 9500 4600
 Wire Wire Line
@@ -286,12 +243,12 @@ Wire Wire Line
 $Comp
 L Keyboard:BBQ10KBD U2
 U 1 1 60461E86
-P 2250 5150
-F 0 "U2" H 2250 6037 60  0000 C CNN
-F 1 "BBQ10KBD" H 2250 5931 60  0000 C CNN
-F 2 "BBQ10KBD:BM14B(0.8)-24DS-0.4V(53)" H 2250 5931 60  0001 C CNN
-F 3 "" H 2250 4800 60  0001 C CNN
-	1    2250 5150
+P 2850 6100
+F 0 "U2" H 2850 6987 60  0000 C CNN
+F 1 "BBQ10KBD" H 2850 6881 60  0000 C CNN
+F 2 "BBQ10KBD:BM14B(0.8)-24DS-0.4V(53)" H 2850 6881 60  0001 C CNN
+F 3 "" H 2850 5750 60  0001 C CNN
+	1    2850 6100
 	1    0    0    -1  
 $EndComp
 Text GLabel 8700 700  2    50   BiDi ~ 0
@@ -299,104 +256,102 @@ PWM
 $Comp
 L power:GND #PWR0116
 U 1 1 60465DD2
-P 1000 5750
-F 0 "#PWR0116" H 1000 5500 50  0001 C CNN
-F 1 "GND" H 1005 5577 50  0000 C CNN
-F 2 "" H 1000 5750 50  0001 C CNN
-F 3 "" H 1000 5750 50  0001 C CNN
-	1    1000 5750
+P 1600 6700
+F 0 "#PWR0116" H 1600 6450 50  0001 C CNN
+F 1 "GND" H 1605 6527 50  0000 C CNN
+F 2 "" H 1600 6700 50  0001 C CNN
+F 3 "" H 1600 6700 50  0001 C CNN
+	1    1600 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 5650 1000 5650
+	2250 6600 1600 6600
 Wire Wire Line
-	1000 5650 1000 5750
+	1600 6600 1600 6700
 Wire Wire Line
-	1650 5750 1000 5750
-Connection ~ 1000 5750
+	2250 6700 1600 6700
+Connection ~ 1600 6700
 $Comp
 L power:+3V3 #PWR0117
 U 1 1 6046A3A4
-P 1350 4550
-F 0 "#PWR0117" H 1350 4400 50  0001 C CNN
-F 1 "+3V3" H 1365 4723 50  0000 C CNN
-F 2 "" H 1350 4550 50  0001 C CNN
-F 3 "" H 1350 4550 50  0001 C CNN
-	1    1350 4550
+P 1950 5500
+F 0 "#PWR0117" H 1950 5350 50  0001 C CNN
+F 1 "+3V3" H 1965 5673 50  0000 C CNN
+F 2 "" H 1950 5500 50  0001 C CNN
+F 3 "" H 1950 5500 50  0001 C CNN
+	1    1950 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 4550 1650 4550
-Text GLabel 1250 5250 0    50   BiDi ~ 0
+	1950 5500 2250 5500
+Text GLabel 1850 6200 0    50   BiDi ~ 0
 PWM
 Wire Wire Line
-	1250 5250 1650 5250
-Text GLabel 3050 4550 2    50   BiDi ~ 0
+	1850 6200 2250 6200
+Text GLabel 3650 5500 2    50   BiDi ~ 0
 COL1
-Text GLabel 3050 4650 2    50   BiDi ~ 0
+Text GLabel 3650 5600 2    50   BiDi ~ 0
 COL2
-Text GLabel 3050 4750 2    50   BiDi ~ 0
+Text GLabel 3650 5700 2    50   BiDi ~ 0
 COL3
-Text GLabel 3050 4850 2    50   BiDi ~ 0
+Text GLabel 3650 5800 2    50   BiDi ~ 0
 COL4
-Text GLabel 3050 4950 2    50   BiDi ~ 0
+Text GLabel 3650 5900 2    50   BiDi ~ 0
 COL5
-Text GLabel 3050 5150 2    50   BiDi ~ 0
+Text GLabel 3650 6100 2    50   BiDi ~ 0
 ROW1
-Text GLabel 3050 5250 2    50   BiDi ~ 0
+Text GLabel 3650 6200 2    50   BiDi ~ 0
 ROW2
-Text GLabel 3050 5350 2    50   BiDi ~ 0
+Text GLabel 3650 6300 2    50   BiDi ~ 0
 ROW3
-Text GLabel 3050 5450 2    50   BiDi ~ 0
+Text GLabel 3650 6400 2    50   BiDi ~ 0
 ROW4
-Text GLabel 3050 5550 2    50   BiDi ~ 0
+Text GLabel 3650 6500 2    50   BiDi ~ 0
 ROW5
-Text GLabel 3050 5650 2    50   BiDi ~ 0
+Text GLabel 3650 6600 2    50   BiDi ~ 0
 ROW6
-Text GLabel 3050 5750 2    50   BiDi ~ 0
+Text GLabel 3650 6700 2    50   BiDi ~ 0
 ROW7
 Wire Wire Line
-	2850 4550 3050 4550
+	3450 5500 3650 5500
 Wire Wire Line
-	2850 4650 3050 4650
+	3450 5600 3650 5600
 Wire Wire Line
-	2850 4750 3050 4750
+	3450 5700 3650 5700
 Wire Wire Line
-	2850 4850 3050 4850
+	3450 5800 3650 5800
 Wire Wire Line
-	2850 4950 3050 4950
+	3450 5900 3650 5900
 Wire Wire Line
-	2850 5150 3050 5150
+	3450 6100 3650 6100
 Wire Wire Line
-	2850 5250 3050 5250
+	3450 6200 3650 6200
 Wire Wire Line
-	2850 5350 3050 5350
+	3450 6300 3650 6300
 Wire Wire Line
-	2850 5450 3050 5450
+	3450 6400 3650 6400
 Wire Wire Line
-	2850 5550 3050 5550
+	3450 6500 3650 6500
 Wire Wire Line
-	2850 5650 3050 5650
+	3450 6600 3650 6600
 Wire Wire Line
-	2850 5750 3050 5750
-Text GLabel 1250 4750 0    50   BiDi ~ 0
-LED0
-Text GLabel 1250 4850 0    50   BiDi ~ 0
+	3450 6700 3650 6700
+Text GLabel 1850 5700 0    50   BiDi ~ 0
+GPIO
+Text GLabel 1850 5800 0    50   BiDi ~ 0
 LED1
-Text GLabel 1250 4950 0    50   BiDi ~ 0
+Text GLabel 1850 5900 0    50   BiDi ~ 0
 LED2
-Text GLabel 1250 5050 0    50   BiDi ~ 0
+Text GLabel 1850 6000 0    50   BiDi ~ 0
 LED3
 Wire Wire Line
-	1250 4750 1650 4750
+	1850 5700 2250 5700
 Wire Wire Line
-	1250 4850 1650 4850
+	1850 5800 2250 5800
 Wire Wire Line
-	1250 4950 1650 4950
+	1850 5900 2250 5900
 Wire Wire Line
-	1250 5050 1650 5050
-Wire Wire Line
-	1900 7350 2250 7350
+	1850 6000 2250 6000
 Text GLabel 8300 4850 0    50   BiDi ~ 0
 LED0
 Text GLabel 8200 4750 0    50   BiDi ~ 0
@@ -471,40 +426,10 @@ Text GLabel 9600 4450 2    50   BiDi ~ 0
 ROW1
 Wire Wire Line
 	9600 4300 9600 4450
-Wire Wire Line
-	1900 6950 2250 6950
-Text GLabel 3000 7150 2    50   BiDi ~ 0
-HW_RESET
-Wire Wire Line
-	2750 7350 3000 7350
-$Comp
-L power:+3V3 #PWR0118
-U 1 1 60540926
-P 3050 6850
-F 0 "#PWR0118" H 3050 6700 50  0001 C CNN
-F 1 "+3V3" H 3065 7023 50  0000 C CNN
-F 2 "" H 3050 6850 50  0001 C CNN
-F 3 "" H 3050 6850 50  0001 C CNN
-	1    3050 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 7050 1900 7050
 Text GLabel 9300 4900 2    50   BiDi ~ 0
 HW_RESET
 Wire Wire Line
 	9300 4300 9300 4900
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J1
-U 1 1 603D8DA8
-P 2450 7050
-F 0 "J1" H 2500 7467 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 2500 7376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2450 7050 50  0001 C CNN
-F 3 "~" H 2450 7050 50  0001 C CNN
-	1    2450 7050
-	1    0    0    -1  
-$EndComp
 Text GLabel 9400 4750 2    50   BiDi ~ 0
 GPIO
 $Comp
@@ -535,45 +460,6 @@ Text GLabel 7750 5150 3    50   BiDi ~ 0
 Display_Power_Switch
 Wire Wire Line
 	7750 5150 7300 5150
-Text GLabel 3000 7250 2    50   BiDi ~ 0
-GPIO
-$Comp
-L Connector_Generic:Conn_02x01 J4
-U 1 1 6040B2A9
-P 5700 7100
-F 0 "J4" H 5750 7317 50  0000 C CNN
-F 1 "Conn_02x01" H 5750 7226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 5700 7100 50  0001 C CNN
-F 3 "~" H 5700 7100 50  0001 C CNN
-	1    5700 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0102
-U 1 1 6040B8AE
-P 5200 7100
-F 0 "#PWR0102" H 5200 6950 50  0001 C CNN
-F 1 "+3.3V" H 5215 7273 50  0000 C CNN
-F 2 "" H 5200 7100 50  0001 C CNN
-F 3 "" H 5200 7100 50  0001 C CNN
-	1    5200 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 6040F99A
-P 6250 7100
-F 0 "#PWR0119" H 6250 6850 50  0001 C CNN
-F 1 "GND" H 6255 6927 50  0000 C CNN
-F 2 "" H 6250 7100 50  0001 C CNN
-F 3 "" H 6250 7100 50  0001 C CNN
-	1    6250 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 7100 5500 7100
-Wire Wire Line
-	6000 7100 6250 7100
 Wire Wire Line
 	7900 4450 7100 4450
 Wire Wire Line
