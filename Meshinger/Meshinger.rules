@@ -11,16 +11,16 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6335)
+    (start_pass_no 6112)
     (layer_rule F.Cu
       (active on)
-      (preferred_direction horizontal)
+      (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
       (against_preferred_direction_trace_costs 2.2)
     )
     (layer_rule B.Cu
       (active on)
-      (preferred_direction vertical)
+      (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
       (against_preferred_direction_trace_costs 1.8)
     )
@@ -72,12 +72,12 @@
     "Net-(C3-Pad2)" "Net-(C3-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad1)" "Net-(C6-Pad2)" "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(C9-Pad1)"
     "Net-(C10-Pad1)" "HW_RESET" "LAN1_TX-" "LAN1_RX-" "LAN1_TX+" "LAN1_RX+" "USB-" USB+
     "UART_TX" "UART_RX" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(J2-Pad8)"
-    "Net-(J3-Pad19)" "SPI_MOSI" "SPI_CLK" "EINK_CHIP_SELECT" "EINK_DATA_COMMAND" "EINK_DISPLAY_RESET" "EINK_DISPLAY_BUSY" "Net-(J3-Pad7)"
-    "Net-(J3-Pad6)" "Net-(J3-Pad4)" "Net-(J3-Pad3)" "Net-(J3-Pad2)" "Net-(J3-Pad1)" ROW1 ROW2 ROW3
-    ROW4 ROW5 ROW6 LED0 LED1 LED2 LED3 ROW7
-    PWM COL5 COL4 COL3 COL2 COL1 GPIO "Net-(Q2-Pad1)"
-    "Net-(C11-Pad1)" "Net-(IC1-PadB1)" "Net-(J5-PadL2)" "Net-(J5-PadL1)" "Net-(J5-PadR7)" "Net-(U6-PadMH3)" "Net-(U6-PadMH2)" "Net-(U6-PadMH1)"
-    "Net-(U7-PadMH3)" "Net-(U7-PadMH2)" "Net-(U7-PadMH1)"
+    "SPI_MOSI" "SPI_CLK" "EINK_CHIP_SELECT" "EINK_DATA_COMMAND" "EINK_DISPLAY_RESET" "EINK_DISPLAY_BUSY" ROW1 ROW2
+    ROW3 ROW4 ROW5 ROW6 LED0 LED1 LED2 LED3
+    ROW7 PWM COL5 COL4 COL3 COL2 COL1 GPIO
+    "Net-(Q2-Pad1)" "Net-(C11-Pad1)" "Net-(IC1-PadB1)" "Net-(J5-PadL2)" "Net-(J5-PadL1)" "Net-(J5-PadR7)" "Net-(U7-PadMH3)" "Net-(U7-PadMH2)"
+    "Net-(U7-PadMH1)" "Net-(J1-Pad19)" "Net-(J1-Pad7)" "Net-(J1-Pad6)" "Net-(J1-Pad4)" "Net-(J1-Pad3)" "Net-(J1-Pad2)" "Net-(J1-Pad1)"
+    "Net-(U6-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

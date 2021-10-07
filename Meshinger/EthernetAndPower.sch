@@ -26,8 +26,8 @@ L power:GND #PWR?
 U 1 1 606C8F86
 P 5500 2850
 AR Path="/6040E803/606C8F86" Ref="#PWR?"  Part="1" 
-AR Path="/606A5CC1/606C8F86" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 5500 2600 50  0001 C CNN
+AR Path="/606A5CC1/606C8F86" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 5500 2600 50  0001 C CNN
 F 1 "GND" H 5505 2677 50  0000 C CNN
 F 2 "" H 5500 2850 50  0001 C CNN
 F 3 "" H 5500 2850 50  0001 C CNN
@@ -72,8 +72,8 @@ L power:GND #PWR?
 U 1 1 606C8FA6
 P 3300 3250
 AR Path="/6040E803/606C8FA6" Ref="#PWR?"  Part="1" 
-AR Path="/606A5CC1/606C8FA6" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 3300 3000 50  0001 C CNN
+AR Path="/606A5CC1/606C8FA6" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 3300 3000 50  0001 C CNN
 F 1 "GND" H 3305 3077 50  0000 C CNN
 F 2 "" H 3300 3250 50  0001 C CNN
 F 3 "" H 3300 3250 50  0001 C CNN
@@ -124,10 +124,10 @@ F 3 "~" H 7850 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_A J1
+L Connector:USB_A J3
 U 1 1 606D792E
 P 2400 4350
-F 0 "J1" H 2457 4817 50  0000 C CNN
+F 0 "J3" H 2457 4817 50  0000 C CNN
 F 1 "USB_A" H 2457 4726 50  0000 C CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 2550 4300 50  0001 C CNN
 F 3 " ~" H 2550 4300 50  0001 C CNN
@@ -145,10 +145,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 4750 2400 4750
 $Comp
-L power:GND #PWR0118
+L power:GND #PWR017
 U 1 1 606DDE92
 P 2400 4850
-F 0 "#PWR0118" H 2400 4600 50  0001 C CNN
+F 0 "#PWR017" H 2400 4600 50  0001 C CNN
 F 1 "GND" H 2405 4677 50  0000 C CNN
 F 2 "" H 2400 4850 50  0001 C CNN
 F 3 "" H 2400 4850 50  0001 C CNN
@@ -172,30 +172,23 @@ $EndComp
 Wire Wire Line
 	5450 4650 5650 4650
 $Comp
-L power:GND #PWR0119
+L power:GND #PWR019
 U 1 1 606F6FA3
-P 5450 5750
-F 0 "#PWR0119" H 5450 5500 50  0001 C CNN
-F 1 "GND" H 5455 5577 50  0000 C CNN
-F 2 "" H 5450 5750 50  0001 C CNN
-F 3 "" H 5450 5750 50  0001 C CNN
-	1    5450 5750
+P 4100 4650
+F 0 "#PWR019" H 4100 4400 50  0001 C CNN
+F 1 "GND" H 4105 4477 50  0000 C CNN
+F 2 "" H 4100 4650 50  0001 C CNN
+F 3 "" H 4100 4650 50  0001 C CNN
+	1    4100 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 5250 6250 4550
-Wire Wire Line
-	5450 4550 6250 4550
+	6250 5250 6250 4750
 Connection ~ 6250 4550
 Wire Wire Line
 	6250 4550 6250 4150
 Wire Wire Line
-	5450 4750 5450 5450
-Wire Wire Line
 	7250 4450 7000 4450
-Connection ~ 5450 5450
-Wire Wire Line
-	5450 5450 5450 5750
 Wire Wire Line
 	8350 4150 8350 4450
 Wire Wire Line
@@ -207,8 +200,6 @@ Wire Wire Line
 Connection ~ 6250 4150
 Wire Wire Line
 	7000 4450 7000 5450
-Wire Wire Line
-	5450 5450 6600 5450
 Connection ~ 7000 5450
 Wire Wire Line
 	6250 4550 6600 4550
@@ -276,10 +267,10 @@ Wire Wire Line
 	9550 5150 9550 5050
 Connection ~ 9550 5050
 $Comp
-L power:+3.3V #PWR0121
+L power:+3.3V #PWR022
 U 1 1 6073C0C4
 P 10350 5050
-F 0 "#PWR0121" H 10350 4900 50  0001 C CNN
+F 0 "#PWR022" H 10350 4900 50  0001 C CNN
 F 1 "+3.3V" H 10365 5223 50  0000 C CNN
 F 2 "" H 10350 5050 50  0001 C CNN
 F 3 "" H 10350 5050 50  0001 C CNN
@@ -289,10 +280,10 @@ $EndComp
 Wire Wire Line
 	9550 5050 10350 5050
 $Comp
-L power:GND #PWR0122
+L power:GND #PWR021
 U 1 1 607590C0
 P 7250 2050
-F 0 "#PWR0122" H 7250 1800 50  0001 C CNN
+F 0 "#PWR021" H 7250 1800 50  0001 C CNN
 F 1 "GND" H 7255 1877 50  0000 C CNN
 F 2 "" H 7250 2050 50  0001 C CNN
 F 3 "" H 7250 2050 50  0001 C CNN
@@ -311,8 +302,6 @@ Wire Wire Line
 	4550 4550 4550 4650
 Wire Wire Line
 	4550 4650 4550 5450
-Wire Wire Line
-	4550 5450 5450 5450
 Connection ~ 4550 4650
 $Comp
 L Connector_Generic:Conn_01x04 J7
@@ -349,43 +338,22 @@ BAT-
 Text GLabel 6250 5250 0    50   BiDi ~ 0
 BAT+
 $Comp
-L SamacSys_Parts:1043 U6
-U 1 1 60752788
-P 1150 6450
-F 0 "U6" H 1650 6715 50  0000 C CNN
-F 1 "1043" H 1650 6624 50  0000 C CNN
-F 2 "1043" H 2000 6550 50  0001 L CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=919" H 2000 6450 50  0001 L CNN
-F 4 "KEYSTONE - 1043 - BATTERY HOLDER, 18650, TH" H 2000 6350 50  0001 L CNN "Description"
-F 5 "14.86" H 2000 6250 50  0001 L CNN "Height"
-F 6 "534-1043" H 2000 6150 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1043?qs=%2F7TOpeL5Mz6j%2FnxeOA1rsg%3D%3D" H 2000 6050 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Keystone Electronics" H 2000 5950 50  0001 L CNN "Manufacturer_Name"
-F 9 "1043" H 2000 5850 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1150 6450
-	1    0    0    -1  
-$EndComp
-$Comp
 L SamacSys_Parts:1043 U7
-U 1 1 60753BFA
-P 3000 6450
-F 0 "U7" H 3500 6715 50  0000 C CNN
-F 1 "1043" H 3500 6624 50  0000 C CNN
-F 2 "1043" H 3850 6550 50  0001 L CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=919" H 3850 6450 50  0001 L CNN
-F 4 "KEYSTONE - 1043 - BATTERY HOLDER, 18650, TH" H 3850 6350 50  0001 L CNN "Description"
-F 5 "14.86" H 3850 6250 50  0001 L CNN "Height"
-F 6 "534-1043" H 3850 6150 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1043?qs=%2F7TOpeL5Mz6j%2FnxeOA1rsg%3D%3D" H 3850 6050 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Keystone Electronics" H 3850 5950 50  0001 L CNN "Manufacturer_Name"
-F 9 "1043" H 3850 5850 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3000 6450
+U 1 1 60752788
+P 1900 6450
+F 0 "U7" H 2400 6715 50  0000 C CNN
+F 1 "1043" H 2400 6624 50  0000 C CNN
+F 2 "1043" H 2750 6550 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=919" H 2750 6450 50  0001 L CNN
+F 4 "KEYSTONE - 1043 - BATTERY HOLDER, 18650, TH" H 2750 6350 50  0001 L CNN "Description"
+F 5 "14.86" H 2750 6250 50  0001 L CNN "Height"
+F 6 "534-1043" H 2750 6150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1043?qs=%2F7TOpeL5Mz6j%2FnxeOA1rsg%3D%3D" H 2750 6050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Keystone Electronics" H 2750 5950 50  0001 L CNN "Manufacturer_Name"
+F 9 "1043" H 2750 5850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1900 6450
 	1    0    0    -1  
 $EndComp
-Text GLabel 3000 6450 0    50   BiDi ~ 0
-BAT+
-Text GLabel 3000 6550 0    50   BiDi ~ 0
-BAT-
 Text GLabel 1150 6450 0    50   BiDi ~ 0
 BAT+
 Text GLabel 1150 6550 0    50   BiDi ~ 0
@@ -394,4 +362,41 @@ Text GLabel 7650 3050 0    50   BiDi ~ 0
 BAT-
 Text GLabel 8150 3050 2    50   BiDi ~ 0
 BAT+
+Text Notes 4350 5050 0    50   ~ 0
+2 and 3 are shorted with no plug\n1 is center, center is positive
+Wire Wire Line
+	4550 5450 6600 5450
+Wire Wire Line
+	5450 4750 6250 4750
+Connection ~ 6250 4750
+Wire Wire Line
+	6250 4750 6250 4550
+Wire Wire Line
+	4100 4650 4100 4350
+Wire Wire Line
+	4100 4350 5450 4350
+Wire Wire Line
+	5450 4350 5450 4550
+Wire Wire Line
+	4550 4650 4100 4650
+Connection ~ 4100 4650
+$Comp
+L SS2040FL:SS2040FL U?
+U 1 1 60FB3A37
+P 1550 6450
+AR Path="/6039D4D4/60FB3A37" Ref="U?"  Part="1" 
+AR Path="/606A5CC1/60FB3A37" Ref="U6"  Part="1" 
+F 0 "U6" H 1550 6715 50  0000 C CNN
+F 1 "SS2040FL" H 1550 6624 50  0000 C CNN
+F 2 "SOD-123FL" H 1550 6450 50  0001 L BNN
+F 3 "" H 1550 6450 50  0001 L BNN
+	1    1550 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6450 1900 6450
+Wire Wire Line
+	1150 6450 1350 6450
+Wire Wire Line
+	1150 6550 1900 6550
 $EndSCHEMATC

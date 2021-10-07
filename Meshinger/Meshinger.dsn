@@ -21,16 +21,15 @@
       )
     )
     (boundary
-      (path pcb 0  113695 -13019.2  113883 -13076.1  114056 -13168.5  114207 -13292.9
-            114331 -13444.4  114424 -13617.3  114481 -13804.9  114500 -14000
-            114500 -110500  114481 -110695  114424 -110883  114331 -111056
-            114207 -111207  114056 -111331  113883 -111424  113695 -111481
-            113500 -111500  -5500 -111500  -5695.09 -111481  -5882.68 -111424
-            -6055.57 -111331  -6207.11 -111207  -6331.47 -111056  -6423.88 -110883
-            -6480.78 -110695  -6500 -110500  -6500 -14000  -6480.78 -13804.9
-            -6423.88 -13617.3  -6331.47 -13444.4  -6207.11 -13292.9  -6055.57 -13168.5
-            -5882.68 -13076.1  -5695.09 -13019.2  -5500 -13000  113500 -13000
-            113695 -13019.2)
+      (path pcb 0  93695.1 2480.78  93882.7 2423.88  94055.6 2331.47  94207.1 2207.11
+            94331.5 2055.57  94423.9 1882.68  94480.8 1695.09  94500 1500
+            94500 -97800  94480.8 -97995.1  94423.9 -98182.7  94331.5 -98355.6
+            94207.1 -98507.1  94055.6 -98631.5  93882.7 -98723.9  93695.1 -98780.8
+            93500 -98800  13500 -98800  13304.9 -98780.8  13117.3 -98723.9
+            12944.4 -98631.5  12792.9 -98507.1  12668.5 -98355.6  12576.1 -98182.7
+            12519.2 -97995.1  12500 -97800  12500 1500  12519.2 1695.09
+            12576.1 1882.68  12668.5 2055.57  12792.9 2207.11  12944.4 2331.47
+            13117.3 2423.88  13304.9 2480.78  13500 2500  93500 2500  93695.1 2480.78)
     )
     (keepout "" (polygon signal 0  84765.3 -81018.5  84536.5 -81073.4  84319 -81163.5  84118.3 -81286.5
             83939.3 -81439.3  83786.5 -81618.3  83663.5 -81819  83573.4 -82036.5
@@ -43,18 +42,14 @@
             86481.5 -82265.3  86426.6 -82036.5  86336.5 -81819  86213.5 -81618.3
             86060.7 -81439.3  85881.7 -81286.5  85681 -81163.5  85463.5 -81073.4
             85234.7 -81018.5  85000 -81000  84765.3 -81018.5))
-    (keepout "" (polygon signal 0  20500 -69500  20500 -75500  24500 -75500  24500 -69500
-            20500 -69500))
-    (keepout "" (polygon signal 0  83500 -69500  83500 -75500  87500 -75500  87500 -69500
-            83500 -69500))
     (keepout "" (polygon signal 0  21265.3 -43518.5  21036.5 -43573.4  20819 -43663.5  20618.3 -43786.5
             20439.3 -43939.3  20286.5 -44118.3  20163.5 -44319  20073.4 -44536.5
-            20018.5 -44765.3  20000 -45000  20000 -60000  20018.5 -60234.7
-            20073.4 -60463.5  20163.5 -60681  20286.5 -60881.7  20439.3 -61060.7
-            20618.3 -61213.5  20819 -61336.5  21036.5 -61426.6  21265.3 -61481.5
-            21500 -61500  21734.7 -61481.5  21963.5 -61426.6  22181 -61336.5
-            22381.7 -61213.5  22560.7 -61060.7  22713.5 -60881.7  22836.5 -60681
-            22926.6 -60463.5  22981.5 -60234.7  23000 -60000  23000 -45000
+            20018.5 -44765.3  20000 -45000  20000 -59400  20018.5 -59634.7
+            20073.4 -59863.5  20163.5 -60081  20286.5 -60281.7  20439.3 -60460.7
+            20618.3 -60613.5  20819 -60736.5  21036.5 -60826.6  21265.3 -60881.5
+            21500 -60900  21734.7 -60881.5  21963.5 -60826.6  22181 -60736.5
+            22381.7 -60613.5  22560.7 -60460.7  22713.5 -60281.7  22836.5 -60081
+            22926.6 -59863.5  22981.5 -59634.7  23000 -59400  23000 -45000
             22981.5 -44765.3  22926.6 -44536.5  22836.5 -44319  22713.5 -44118.3
             22560.7 -43939.3  22381.7 -43786.5  22181 -43663.5  21963.5 -43573.4
             21734.7 -43518.5  21500 -43500  21265.3 -43518.5))
@@ -67,94 +62,123 @@
     )
   )
   (placement
+    (component MountingHole:MountingHole_2.2mm_M2_DIN965
+      (place MH_CASE1 15300 -41000 front 0 (PN MountingHole_2.2mm_M2_DIN965))
+      (place MH_CASE2 91800 -41000 front 0 (PN MountingHole_2.2mm_M2_DIN965))
+    )
+    (component "SS2040FL:SOD-123FL"
+      (place U6 22000 -41000 front 180 (PN SS2040FL))
+    )
     (component MountingHole:MountingHole_6.4mm_M6_Pad_TopBottom
-      (place ANT1 6000 -21500 front 0 (PN MountingHole_6.4mm_M6_Pad_TopBottom))
+      (place ANT1 19600 -4800 front 0 (PN MountingHole_6.4mm_M6_Pad_TopBottom))
     )
     (component MountingHole:MountingHole_6.4mm_M6_Pad_TopBottom::1
-      (place ANT2 102000 -21500 front 0 (PN MountingHole_6.4mm_M6_Pad_TopBottom))
+      (place ANT2 87200 -4800 front 0 (PN MountingHole_6.4mm_M6_Pad_TopBottom))
     )
     (component SamacSys_Parts:1043
-      (place U7 102000 -34500 front 270 (PN 1043))
-      (place U6 6000 -34500 front 270 (PN 1043))
+      (place U7 18000 -26000 front 0 (PN 1043))
     )
     (component SamacSys_Parts:LQM2MPN1R0NG0L
-      (place L2 58500 -34500 front 270 (PN LQM2MPN1R0MGHL))
+      (place L2 66700 -4600 front 270 (PN LQM2MPN1R0MGHL))
     )
     (component Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
-      (place C13 62000 -37000 front 0 (PN 10uF))
-      (place C12 61500 -31000 front 180 (PN 2.2uF))
+      (place C13 70200 -7100 front 0 (PN 10uF))
+      (place C12 69700 -1100 front 180 (PN 2.2uF))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
-      (place J7 30000 -105000 front 270 (PN Conn_01x04))
+      (place J7 40200 -95800 front 90 (PN Conn_01x04))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical
-      (place J6 84500 -105500 front 180 (PN Conn_02x01))
+      (place J6 77000 -6600 front 90 (PN Conn_02x01))
     )
     (component Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR
-      (place J5 84000 -31000 front 180 (PN RJ45_Amphenol_RJMG1BD3B8K1ANR))
+      (place J5 30200 -80200 front 270 (PN RJ45_Amphenol_RJMG1BD3B8K1ANR))
     )
     (component SamacSys_Parts:PJ079BH
-      (place J4 56000 -25000 front 270 (PN Barrel_Jack_Switch))
+      (place J4 51800 -9000 front 270 (PN Barrel_Jack_Switch))
     )
     (component "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal"
-      (place J1 31500 -27000 front 180 (PN USB_A))
+      (place J3 41200 -11000 front 180 (PN USB_A))
     )
     (component SamacSys_Parts:BGA6C40P2X3_86X116X62
-      (place IC1 61500 -34000 front 0 (PN FAN53610AUC33X))
+      (place IC1 69700 -4100 front 0 (PN FAN53610AUC33X))
     )
     (component Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder
-      (place C11 74500 -38000 front 180 (PN 0.1uF))
+      (place C11 33350 -95200 front 0 (PN 0.1uF))
     )
     (component Inductor_SMD:IND_LQH44PN100MJ0L
-      (place L1 44500 -63525 front 270 (PN 10uH))
+      (place L1 47100 -60125 front 270 (PN 10uH))
     )
     (component "Logo:Logo-175DPI"
-      (place G*** 96000 -40000 back 0 (PN LOGO))
+      (place G*** 57600 -22000 back 0 (PN LOGO))
     )
     (component MountingHole:MountingHole_2.2mm_M2_DIN965_Pad
       (place MH_KBD2 80500 -96500 front 0 (PN MountingHole_2.2mm_M2_DIN965_Pad))
       (place MH_KBD1 27500 -96500 front 0 (PN MountingHole_2.2mm_M2_DIN965_Pad))
     )
     (component SKW92A:SKYLAB_SKW92A
-      (place U1 54000 -86000 front 0 (PN SKW92A))
+      (place U5 59600 -78600 front 0 (PN SKW92A))
     )
-    (component "SS2040FL:SOD-123FL"
-      (place U5 41000 -35000 front 180 (PN SS2040FL))
-      (place U4 47500 -43500 front 0 (PN SS2040FL))
-      (place U3 42500 -39000 front 0 (PN SS2040FL))
+    (component "SS2040FL:SOD-123FL::1"
+      (place U3 47500 -43500 front 180 (PN SS2040FL))
+      (place U2 54000 -52000 front 0 (PN SS2040FL))
+      (place U1 49000 -47500 front 0 (PN SS2040FL))
     )
     (component "BBQ10KBD:BM14B(0.8)-24DS-0.4V(53)"
-      (place U2 63000 -50500 front 270 (PN BBQ10KBD))
+      (place U4 63000 -50500 front 270 (PN BBQ10KBD))
     )
     (component Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
-      (place R1 51500 -59000 front 0 (PN 0.47ohm))
+      (place R1 54100 -55600 front 0 (PN 0.47ohm))
     )
     (component "Package_TO_SOT_SMD:SOT-23"
-      (place Q2 37000 -63000 front 90 (PN NTR2101P))
+      (place Q2 37200 -60400 front 90 (PN NTR2101P))
     )
     (component "MCH3478-TL-W:On_Semiconductor-MCH3478-TL-H-Manufacturer_Recommended"
-      (place Q1 46000 -59000 front 180 (PN "MCH3478-TL-W"))
+      (place Q1 48600 -55600 front 180 (PN "MCH3478-TL-W"))
     )
     (component "FH34SRJ-24S:HRS_FH34SRJ-24S-0.5SH(99)"
-      (place J3 28500 -52500 front 270 (PN "FH34SRJ-24S-0.5SH(99)"))
+      (place J1 28500 -52500 front 270 (PN "FH34SRJ-24S-0.5SH(99)"))
     )
     (component "Connector_Card:microSD_HC_Hirose_DM3D-SF"
-      (place J2 44000 -23000 front 180 (PN Micro_SD_Card))
+      (place J2 22600 -68000 front 270 (PN Micro_SD_Card))
     )
     (component Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder::1
       (place C10 37000 -50500 front 0 (PN 1uF/25V))
       (place C9 37000 -56500 front 0 (PN 1uF/25V))
-      (place C8 48500 -36000 front 0 (PN 1uF/25V))
+      (place C8 55000 -44500 front 0 (PN 1uF/25V))
       (place C7 37000 -44500 front 0 (PN 1uF/25V))
       (place C6 37000 -47500 front 180 (PN 1uF/25V))
       (place C5 37000 -53500 front 0 (PN 1uF/25V))
       (place C4 42000 -50500 front 270 (PN 1uF/25V))
-      (place C3 48500 -39000 front 0 (PN 4.7uF/25V))
-      (place C2 49000 -62962.5 front 270 (PN 1uF/6.3V))
-      (place C1 52500 -63037.5 front 270 (PN 0.1uF/16V))
+      (place C3 55000 -47500 front 0 (PN 4.7uF/25V))
+      (place C2 51600 -59562.5 front 270 (PN 1uF/6.3V))
+      (place C1 55100 -59637.5 front 270 (PN 0.1uF/16V))
     )
   )
   (library
+    (image MountingHole:MountingHole_2.2mm_M2_DIN965
+      (outline (path signal 150  1900 0  1823.04 -535.292  1598.38 -1027.22  1244.23 -1435.92
+            789.289 -1728.3  270.398 -1880.66  -270.398 -1880.66  -789.289 -1728.3
+            -1244.23 -1435.92  -1598.38 -1027.22  -1823.04 -535.292  -1900 0
+            -1823.04 535.292  -1598.38 1027.22  -1244.23 1435.92  -789.289 1728.3
+            -270.398 1880.66  270.398 1880.66  789.289 1728.3  1244.23 1435.92
+            1598.38 1027.22  1823.04 535.292  1900 0))
+      (outline (path signal 50  2150 0  2070.27 -580.063  1837 -1117.11  1467.49 -1571.3
+            989.14 -1908.95  437.43 -2105.03  -146.721 -2144.99  -719.991 -2025.86
+            -1239.86 -1756.48  -1667.78 -1356.84  -1972 -856.562  -2129.97 -292.758
+            -2129.97 292.758  -1972 856.562  -1667.78 1356.84  -1239.86 1756.48
+            -719.991 2025.86  -146.721 2144.99  437.43 2105.03  989.14 1908.95
+            1467.49 1571.3  1837 1117.11  2070.27 580.063  2150 0))
+      (keepout "" (circle F.Cu 2200))
+      (keepout "" (circle B.Cu 2200))
+    )
+    (image "SS2040FL:SOD-123FL"
+      (outline (path signal 127  -2250 1300  2250 1300))
+      (outline (path signal 127  2250 -1300  -2250 -1300))
+      (outline (path signal 127  2250 1300  2250 -1300))
+      (pin Rect[T]Pad_2000x2000_um 2 1800 0)
+      (pin Rect[T]Pad_2000x2000_um 1 -1800 0)
+    )
     (image MountingHole:MountingHole_6.4mm_M6_Pad_TopBottom
       (outline (path signal 50  6650 0  6568.13 -1040.29  6324.53 -2054.96  5925.19 -3019.04
             5379.96 -3908.77  4702.26 -4702.26  3908.77 -5379.96  3019.04 -5925.19
@@ -629,7 +653,7 @@
       (pin Rect[T]Pad_1200x2000_um 2 16750 12500)
       (pin Rect[T]Pad_1200x2000_um 1 18750 12500)
     )
-    (image "SS2040FL:SOD-123FL"
+    (image "SS2040FL:SOD-123FL::1"
       (outline (path signal 127  2250 1300  2250 -1300))
       (outline (path signal 127  2250 -1300  -2250 -1300))
       (outline (path signal 127  -2250 1300  2250 1300))
@@ -1067,183 +1091,162 @@
   )
   (network
     (net "Net-(C3-Pad2)"
-      (pins L1-1 U4-2 Q1-3 C3-2)
+      (pins L1-1 U2-2 Q1-3 C3-2)
     )
     (net "Net-(C3-Pad1)"
-      (pins U5-1 U3-2 C3-1)
+      (pins U3-1 U1-2 C3-1)
     )
     (net "Net-(C4-Pad2)"
-      (pins U4-1 J3-21 C4-2)
+      (pins U2-1 J1-21 C4-2)
     )
     (net "Net-(C5-Pad1)"
-      (pins J3-20 C5-1)
+      (pins J1-20 C5-1)
     )
     (net "Net-(C6-Pad2)"
-      (pins U5-2 J3-23 C6-2)
+      (pins U3-2 J1-23 C6-2)
     )
     (net "Net-(C7-Pad1)"
-      (pins J3-24 C7-1)
+      (pins J1-24 C7-1)
     )
     (net "Net-(C8-Pad1)"
-      (pins J3-5 C8-1)
+      (pins J1-5 C8-1)
     )
     (net "Net-(C9-Pad1)"
-      (pins J3-18 C9-1)
+      (pins J1-18 C9-1)
     )
     (net "Net-(C10-Pad1)"
-      (pins J3-22 C10-1)
+      (pins J1-22 C10-1)
     )
     (net HW_RESET
-      (pins J7-1 U1-45)
+      (pins J7-1 U5-45)
     )
     (net "LAN1_TX-"
-      (pins J5-R2 U1-4)
+      (pins J5-R2 U5-4)
     )
     (net "LAN1_RX-"
-      (pins J5-R6 U1-2)
+      (pins J5-R6 U5-2)
     )
     (net LAN1_TX+
-      (pins J5-R1 U1-3)
+      (pins J5-R1 U5-3)
     )
     (net LAN1_RX+
-      (pins J5-R3 U1-1)
+      (pins J5-R3 U5-1)
     )
     (net "USB-"
-      (pins J1-2 U1-19)
+      (pins J3-2 U5-19)
     )
     (net +3V3
-      (pins L2-2 C13-1 IC1-C1 U1-29 U1-28 U2-2 Q2-2 J2-4)
+      (pins L2-2 C13-1 IC1-C1 U5-29 U5-28 U4-2 Q2-2 J2-4)
     )
     (net USB+
-      (pins J1-3 U1-18)
+      (pins J3-3 U5-18)
     )
     (net UART_TX
-      (pins J7-3 U1-26)
+      (pins J7-3 U5-26)
     )
     (net UART_RX
-      (pins J7-4 U1-25)
+      (pins J7-4 U5-25)
     )
     (net "Net-(J2-Pad1)"
-      (pins U1-24 J2-1)
+      (pins U5-24 J2-1)
     )
     (net "Net-(J2-Pad2)"
-      (pins U1-23 J2-2)
+      (pins U5-23 J2-2)
     )
     (net "Net-(J2-Pad3)"
-      (pins U1-22 J2-3)
+      (pins U5-22 J2-3)
     )
     (net "Net-(J2-Pad5)"
-      (pins U1-21 J2-5)
+      (pins U5-21 J2-5)
     )
     (net "Net-(J2-Pad7)"
-      (pins U1-16 J2-7)
+      (pins U5-16 J2-7)
     )
     (net "Net-(J2-Pad8)"
-      (pins U1-15 J2-8)
-    )
-    (net "Net-(J3-Pad19)"
-      (pins J3-19)
+      (pins U5-15 J2-8)
     )
     (net SPI_MOSI
-      (pins U1-12 J3-14)
+      (pins U5-12 J1-14)
     )
     (net SPI_CLK
-      (pins U1-11 J3-13)
+      (pins U5-11 J1-13)
     )
     (net EINK_CHIP_SELECT
-      (pins U1-41 J3-12)
+      (pins U5-41 J1-12)
     )
     (net EINK_DATA_COMMAND
-      (pins U1-42 J3-11)
+      (pins U5-42 J1-11)
     )
     (net EINK_DISPLAY_RESET
-      (pins U1-44 J3-10)
+      (pins U5-44 J1-10)
     )
     (net EINK_DISPLAY_BUSY
-      (pins U1-43 J3-9)
-    )
-    (net "Net-(J3-Pad7)"
-      (pins J3-7)
-    )
-    (net "Net-(J3-Pad6)"
-      (pins J3-6)
-    )
-    (net "Net-(J3-Pad4)"
-      (pins J3-4)
-    )
-    (net "Net-(J3-Pad3)"
-      (pins R1-1 Q1-2 J3-3)
-    )
-    (net "Net-(J3-Pad2)"
-      (pins Q1-1 J3-2)
-    )
-    (net "Net-(J3-Pad1)"
-      (pins J3-1)
+      (pins U5-43 J1-9)
     )
     (net ROW1
-      (pins U1-48 U2-6)
+      (pins U5-48 U4-6)
     )
     (net ROW2
-      (pins U1-47 U2-8)
+      (pins U5-47 U4-8)
     )
     (net ROW3
-      (pins U1-40 U2-18)
+      (pins U5-40 U4-18)
     )
     (net ROW4
-      (pins U1-39 U2-20)
+      (pins U5-39 U4-20)
     )
     (net ROW5
-      (pins U1-38 U2-21)
+      (pins U5-38 U4-21)
     )
     (net ROW6
-      (pins U1-37 U2-22)
+      (pins U5-37 U4-22)
     )
     (net LED0
-      (pins J5-L4 U1-35)
+      (pins J5-L4 U5-35)
     )
     (net LED1
-      (pins U1-34 U2-24)
+      (pins U5-34 U4-24)
     )
     (net LED2
-      (pins U1-33 U2-25)
+      (pins U5-33 U4-25)
     )
     (net LED3
-      (pins U1-32 U2-23)
+      (pins U5-32 U4-23)
     )
     (net ROW7
-      (pins U1-36 U2-27)
+      (pins U5-36 U4-27)
     )
     (net PWM
-      (pins U1-10 U2-3)
+      (pins U5-10 U4-3)
     )
     (net COL5
-      (pins U1-9 U2-19)
+      (pins U5-9 U4-19)
     )
     (net COL4
-      (pins U1-8 U2-17)
+      (pins U5-8 U4-17)
     )
     (net COL3
-      (pins U1-7 U2-10)
+      (pins U5-7 U4-10)
     )
     (net COL2
-      (pins U1-6 U2-9)
+      (pins U5-6 U4-9)
     )
     (net COL1
-      (pins U1-5 U2-7)
+      (pins U5-5 U4-7)
     )
     (net Display_Power_Switch
-      (pins L1-2 Q2-3 J3-16 J3-15 C2-2 C1-2)
+      (pins L1-2 Q2-3 J1-16 J1-15 C2-2 C1-2)
     )
     (net GPIO
-      (pins U1-46 U2-26)
+      (pins U5-46 U4-26)
     )
     (net "Net-(Q2-Pad1)"
-      (pins U1-31 Q2-1)
+      (pins U5-31 Q2-1)
     )
     (net GND
-      (pins C13-2 C12-2 J7-2 J5-13 J5-13@1 J5-L3 J5-R8 J4-MH2 J4-MH1 J4-1 J1-4 J1-5
-        J1-5@1 IC1-C2 IC1-A1 C11-2 U1-30 U1-27 U1-20 U1-17 U1-14 U1-13 U3-1 U2-28
-        U2-15 U2-14 U2-1 U2-16 U2-13 U2-12 U2-11 U2-5 U2-4 R1-2 J3-S2 J3-17 J3-8 J3-S1
+      (pins C13-2 C12-2 J7-2 J5-13 J5-13@1 J5-L3 J5-R8 J4-MH2 J4-MH1 J4-2 J3-4 J3-5
+        J3-5@1 IC1-C2 IC1-A1 C11-2 U5-30 U5-27 U5-20 U5-17 U5-14 U5-13 U1-1 U4-28
+        U4-15 U4-14 U4-1 U4-16 U4-13 U4-12 U4-11 U4-5 U4-4 R1-2 J1-S2 J1-17 J1-8 J1-S1
         J2-6 J2-9 C10-2 C9-2 C8-2 C7-2 C6-1 C5-2 C4-1 C2-1 C1-1)
     )
     (net "Net-(C11-Pad1)"
@@ -1262,19 +1265,10 @@
       (pins J5-R7)
     )
     (net BAT+
-      (pins U7-1 U6-1 C12-1 J6-2 J4-2 J1-1 IC1-B2 IC1-A2)
+      (pins U6-1 C12-1 J6-2 J4-1 J3-1 IC1-B2 IC1-A2)
     )
     (net "BAT-"
-      (pins U7-2 U6-2 J6-1 J4-3)
-    )
-    (net "Net-(U6-PadMH3)"
-      (pins U6-MH3)
-    )
-    (net "Net-(U6-PadMH2)"
-      (pins U6-MH2)
-    )
-    (net "Net-(U6-PadMH1)"
-      (pins U6-MH1)
+      (pins U7-2 J6-1 J4-3)
     )
     (net "Net-(U7-PadMH3)"
       (pins U7-MH3)
@@ -1285,17 +1279,41 @@
     (net "Net-(U7-PadMH1)"
       (pins U7-MH1)
     )
+    (net "Net-(J1-Pad19)"
+      (pins J1-19)
+    )
+    (net "Net-(J1-Pad7)"
+      (pins J1-7)
+    )
+    (net "Net-(J1-Pad6)"
+      (pins J1-6)
+    )
+    (net "Net-(J1-Pad4)"
+      (pins J1-4)
+    )
+    (net "Net-(J1-Pad3)"
+      (pins R1-1 Q1-2 J1-3)
+    )
+    (net "Net-(J1-Pad2)"
+      (pins Q1-1 J1-2)
+    )
+    (net "Net-(J1-Pad1)"
+      (pins J1-1)
+    )
+    (net "Net-(U6-Pad2)"
+      (pins U6-2 U7-1)
+    )
     (class kicad_default "" COL1 COL2 COL3 COL4 COL5 EINK_CHIP_SELECT EINK_DATA_COMMAND
       EINK_DISPLAY_BUSY EINK_DISPLAY_RESET GPIO HW_RESET LAN1_RX+ "LAN1_RX-"
       LAN1_TX+ "LAN1_TX-" LED0 LED1 LED2 LED3 "Net-(C10-Pad1)" "Net-(C11-Pad1)"
       "Net-(C3-Pad1)" "Net-(C3-Pad2)" "Net-(C4-Pad2)" "Net-(C5-Pad1)" "Net-(C6-Pad2)"
-      "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(C9-Pad1)" "Net-(IC1-PadB1)" "Net-(J2-Pad1)"
-      "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(J2-Pad8)"
-      "Net-(J3-Pad1)" "Net-(J3-Pad19)" "Net-(J3-Pad2)" "Net-(J3-Pad3)" "Net-(J3-Pad4)"
-      "Net-(J3-Pad6)" "Net-(J3-Pad7)" "Net-(J5-PadL1)" "Net-(J5-PadL2)" "Net-(J5-PadR7)"
-      "Net-(Q2-Pad1)" "Net-(U6-PadMH1)" "Net-(U6-PadMH2)" "Net-(U6-PadMH3)"
-      "Net-(U7-PadMH1)" "Net-(U7-PadMH2)" "Net-(U7-PadMH3)" PWM ROW1 ROW2
-      ROW3 ROW4 ROW5 ROW6 ROW7 SPI_CLK SPI_MOSI UART_RX UART_TX USB+ "USB-"
+      "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(C9-Pad1)" "Net-(IC1-PadB1)" "Net-(J1-Pad1)"
+      "Net-(J1-Pad19)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(J1-Pad6)"
+      "Net-(J1-Pad7)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad5)"
+      "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(J5-PadL1)" "Net-(J5-PadL2)" "Net-(J5-PadR7)"
+      "Net-(Q2-Pad1)" "Net-(U6-Pad2)" "Net-(U7-PadMH1)" "Net-(U7-PadMH2)"
+      "Net-(U7-PadMH3)" PWM ROW1 ROW2 ROW3 ROW4 ROW5 ROW6 ROW7 SPI_CLK SPI_MOSI
+      UART_RX UART_TX USB+ "USB-"
       (circuit
         (use_via Via[0-1]_685.8:330.2_um)
       )
@@ -1315,62 +1333,68 @@
     )
   )
   (wiring
-    (wire (path F.Cu 200  68431.8 -71818.2  66750 -73500)(net "LAN1_TX-")(type protect))
-    (wire (path F.Cu 200  83550 -56700  68431.8 -71818.2)(net "LAN1_TX-")(type protect))
-    (wire (path F.Cu 200  82730 -33540  83550 -34360  83550 -56700)(net "LAN1_TX-")(type protect))
-    (wire (path F.Cu 200  85202.4 -37600.6  85275 -37673.2)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  85151.9 -29797.6  85202.4 -29848.1)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  82797.6 -31692.8  82797.6 -29848.1)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  81527.6 -32962.8  82797.6 -31692.8)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  80711 -34742.4  81527.6 -33925.8)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  85202.4 -29848.1  85202.4 -37600.6)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  82848.1 -29797.6  85151.9 -29797.6)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  78987.6 -34117.2  79612.8 -34742.4)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  77650 -33540  78987.6 -33540)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  82797.6 -29848.1  82848.1 -29797.6)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  79612.8 -34742.4  80711 -34742.4)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  78987.6 -33540  78987.6 -34117.2)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  81527.6 -33925.8  81527.6 -32962.8)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  72431.8 -71818.2  70750 -73500)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  85275 -58975  72431.8 -71818.2)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  85275 -37673.2  85275 -58975)(net "LAN1_RX-")(type protect))
-    (wire (path F.Cu 200  84000 -56886.4  68750 -72136.4)(net LAN1_TX+)(type protect))
-    (wire (path F.Cu 200  84000 -31000  84000 -56886.4)(net LAN1_TX+)(type protect))
-    (wire (path F.Cu 200  68750 -72136.4  68750 -73500)(net LAN1_TX+)(type protect))
-    (wire (path F.Cu 200  81460 -31000  81460 -32394.1)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  82347.6 -29661.7  82661.7 -29347.6)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  85652.4 -37414.2  85725 -37486.8)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  85338.3 -29347.6  85652.4 -29661.7  85652.4 -37414.2)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  82347.6 -31506.5  82347.6 -29661.7)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  82661.7 -29347.6  85338.3 -29347.6)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  81460 -32394.1  82347.6 -31506.5)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  85725 -59161.4  72750 -72136.4  72750 -73500)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  85725 -37486.8  85725 -59161.4)(net LAN1_RX+)(type protect))
-    (wire (path F.Cu 200  28225 -27775  28225 -32593.2)(net "USB-")(type protect))
-    (wire (path F.Cu 200  29000 -27000  28225 -27775)(net "USB-")(type protect))
-    (wire (path F.Cu 200  28225 -32593.2  16725 -44093.2)(net "USB-")(type protect))
-    (wire (path F.Cu 200  21299.4 -61772.2  21598.3 -61780.1)(net "USB-")(type protect))
-    (wire (path F.Cu 200  20748.4 -61766.1  21293.6 -61766.1)(net "USB-")(type protect))
-    (wire (path F.Cu 200  16725 -44093.2  16725 -56906.8)(net "USB-")(type protect))
-    (wire (path F.Cu 200  19719.9 -59901.7  19719.9 -60737.7)(net "USB-")(type protect))
-    (wire (path F.Cu 200  16725 -56906.8  19719.9 -59901.7)(net "USB-")(type protect))
-    (wire (path F.Cu 200  19719.9 -60737.7  20748.4 -61766.1)(net "USB-")(type protect))
-    (wire (path F.Cu 200  21293.6 -61766.1  21299.4 -61772.2)(net "USB-")(type protect))
-    (wire (path F.Cu 200  21598.3 -61780.1  33318.2 -73500  36300 -73500  36750 -73500)(net "USB-")(type protect))
-    (wire (path F.Cu 200  27000 -27000  27775 -27775)(net USB+)(type protect))
-    (wire (path F.Cu 200  27775 -32406.8  16275 -43906.8)(net USB+)(type protect))
-    (wire (path F.Cu 200  19248.3 -60066.5  19248.3 -60909.2  20565.8 -62226.6)(net USB+)(type protect))
-    (wire (path F.Cu 200  21408.4 -62226.6  26823.1 -67641.3)(net USB+)(type protect))
-    (wire (path F.Cu 200  16275 -57093.2  19248.3 -60066.5)(net USB+)(type protect))
-    (wire (path F.Cu 200  16275 -43906.8  16275 -57093.2)(net USB+)(type protect))
-    (wire (path F.Cu 200  20565.8 -62226.6  21408.4 -62226.6)(net USB+)(type protect))
-    (wire (path F.Cu 200  38300 -73950  38750 -73500)(net USB+)(type protect))
-    (wire (path F.Cu 200  38300 -74004.3  38300 -73950)(net USB+)(type protect))
-    (wire (path F.Cu 200  37551.9 -74752.4  38300 -74004.3)(net USB+)(type protect))
-    (wire (path F.Cu 200  35948.1 -74752.4  37551.9 -74752.4)(net USB+)(type protect))
-    (wire (path F.Cu 200  35145.7 -73950  35948.1 -74752.4)(net USB+)(type protect))
-    (wire (path F.Cu 200  33131.8 -73950  35145.7 -73950)(net USB+)(type protect))
-    (wire (path F.Cu 200  26823.1 -67641.3  33131.8 -73950)(net USB+)(type protect))
-    (wire (path F.Cu 200  27775 -27775  27775 -32406.8)(net USB+)(type protect))
+    (wire (path F.Cu 200  34392.4 -83246.5  34392.4 -84674.2)(net "LAN1_TX-")(type protect))
+    (wire (path F.Cu 200  32330 -82357.6  33503.5 -82357.6  34392.4 -83246.5)(net "LAN1_TX-")(type protect))
+    (wire (path F.Cu 200  32740 -81470  32330 -81880  32330 -82357.6)(net "LAN1_TX-")(type protect))
+    (wire (path F.Cu 200  34392.4 -84674.2  38293.2 -88575  51238.6 -88575  72350 -67463.6
+            72350 -66100)(net "LAN1_TX-")(type protect))
+    (wire (path F.Cu 200  75900 -67240.7  75900 -66100)(net "LAN1_RX-")(type protect))
+    (wire (path F.Cu 200  53313.3 -89827.4  75900 -67240.7)(net "LAN1_RX-")(type protect))
+    (wire (path F.Cu 200  37774.4 -89827.4  53313.3 -89827.4)(net "LAN1_RX-")(type protect))
+    (wire (path F.Cu 200  33609.4 -85662.4  37774.4 -89827.4)(net "LAN1_RX-")(type protect))
+    (wire (path F.Cu 200  32740 -85662.4  33609.4 -85662.4)(net "LAN1_RX-")(type protect))
+    (wire (path F.Cu 200  32740 -86550  32740 -85662.4)(net "LAN1_RX-")(type protect))
+    (wire (path F.Cu 200  75900 -66100  76350 -66100)(net "LAN1_RX-")(type protect))
+    (wire (path F.Cu 200  31537.6 -82455.8  31889.4 -82807.6)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  33942.4 -84587.2  33805.7 -84723.9)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  31889.4 -82807.6  33317.2 -82807.6)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  30200 -80200  31537.6 -81537.6)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  33317.2 -82807.6  33942.4 -83432.8  33942.4 -84587.2)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  31537.6 -81537.6  31537.6 -82455.8)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  33805.7 -84723.9  38106.8 -89025)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  72668.2 -67781.8  74350 -66100)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  51425 -89025  72668.2 -67781.8)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  38106.8 -89025  51425 -89025)(net LAN1_TX+)(type protect))
+    (wire (path F.Cu 200  77900 -65650  78350 -66100)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  77151.9 -64847.6  77900 -65595.7)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  37960.8 -89377.4  53126.9 -89377.4)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  75202.4 -65193.3  75548.1 -64847.6)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  53126.9 -89377.4  75202.4 -67301.9)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  77900 -65595.7  77900 -65650)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  75548.1 -64847.6  77151.9 -64847.6)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  75202.4 -67301.9  75202.4 -65193.3)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  33795.8 -85212.4  37960.8 -89377.4)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  31323.4 -82740  31537.6 -82954.2)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  31537.6 -84587.2  32162.8 -85212.4  33795.8 -85212.4)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  31537.6 -82954.2  31537.6 -84587.2)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  30200 -82740  31323.4 -82740)(net LAN1_RX+)(type protect))
+    (wire (path F.Cu 200  37925 -11775  37925 -31793.2)(net "USB-")(type protect))
+    (wire (path F.Cu 200  38700 -11000  37925 -11775)(net "USB-")(type protect))
+    (wire (path F.Cu 200  37925 -31793.2  24825 -44893.2)(net "USB-")(type protect))
+    (wire (path F.Cu 200  24023.1 -62677.4  24825 -62677.4)(net "USB-")(type protect))
+    (wire (path F.Cu 200  23972.6 -61423.1  23972.6 -62626.9)(net "USB-")(type protect))
+    (wire (path F.Cu 200  24825 -61372.6  24023.1 -61372.6)(net "USB-")(type protect))
+    (wire (path F.Cu 200  24825 -62677.4  24825 -63106.8)(net "USB-")(type protect))
+    (wire (path F.Cu 200  23972.6 -62626.9  24023.1 -62677.4)(net "USB-")(type protect))
+    (wire (path F.Cu 200  24023.1 -61372.6  23972.6 -61423.1)(net "USB-")(type protect))
+    (wire (path F.Cu 200  24825 -44893.2  24825 -61372.6)(net "USB-")(type protect))
+    (wire (path F.Cu 200  41900 -66100  42350 -66100)(net "USB-")(type protect))
+    (wire (path F.Cu 200  24825 -63106.8  27818.2 -66100  41900 -66100)(net "USB-")(type protect))
+    (wire (path F.Cu 200  37475 -11775  37475 -31606.8)(net USB+)(type protect))
+    (wire (path F.Cu 200  36700 -11000  37475 -11775)(net USB+)(type protect))
+    (wire (path F.Cu 200  37475 -31606.8  24375 -44706.8)(net USB+)(type protect))
+    (wire (path F.Cu 200  24002.5 -63293.2  24375 -63293.2)(net USB+)(type protect))
+    (wire (path F.Cu 200  23522.6 -62813.3  24002.5 -63293.2)(net USB+)(type protect))
+    (wire (path F.Cu 200  23522.6 -61236.7  23522.6 -62813.3)(net USB+)(type protect))
+    (wire (path F.Cu 200  23836.7 -60922.6  23522.6 -61236.7)(net USB+)(type protect))
+    (wire (path F.Cu 200  24375 -60922.6  23836.7 -60922.6)(net USB+)(type protect))
+    (wire (path F.Cu 200  24375 -44706.8  24375 -60922.6)(net USB+)(type protect))
+    (wire (path F.Cu 200  43900 -66550  44350 -66100)(net USB+)(type protect))
+    (wire (path F.Cu 200  40745.7 -66550  41548.1 -67352.4)(net USB+)(type protect))
+    (wire (path F.Cu 200  43151.9 -67352.4  43900 -66604.3)(net USB+)(type protect))
+    (wire (path F.Cu 200  41548.1 -67352.4  43151.9 -67352.4)(net USB+)(type protect))
+    (wire (path F.Cu 200  43900 -66604.3  43900 -66550)(net USB+)(type protect))
+    (wire (path F.Cu 200  27631.8 -66550  40745.7 -66550)(net USB+)(type protect))
+    (wire (path F.Cu 200  24375 -63293.2  27631.8 -66550)(net USB+)(type protect))
   )
 )
