@@ -113,14 +113,14 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x01 J?
 U 1 1 606C8F7A
-P 7850 3050
+P 6900 2700
 AR Path="/6040E803/606C8F7A" Ref="J?"  Part="1" 
 AR Path="/606A5CC1/606C8F7A" Ref="J6"  Part="1" 
-F 0 "J6" H 7900 3267 50  0000 C CNN
-F 1 "Conn_02x01" H 7900 3176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 7850 3050 50  0001 C CNN
-F 3 "~" H 7850 3050 50  0001 C CNN
-	1    7850 3050
+F 0 "J6" H 6950 2917 50  0000 C CNN
+F 1 "Conn_02x01" H 6950 2826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 6900 2700 50  0001 C CNN
+F 3 "~" H 6900 2700 50  0001 C CNN
+	1    6900 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -282,36 +282,34 @@ Wire Wire Line
 $Comp
 L power:GND #PWR021
 U 1 1 607590C0
-P 7250 2050
-F 0 "#PWR021" H 7250 1800 50  0001 C CNN
-F 1 "GND" H 7255 1877 50  0000 C CNN
-F 2 "" H 7250 2050 50  0001 C CNN
-F 3 "" H 7250 2050 50  0001 C CNN
-	1    7250 2050
+P 6300 1700
+F 0 "#PWR021" H 6300 1450 50  0001 C CNN
+F 1 "GND" H 6305 1527 50  0000 C CNN
+F 2 "" H 6300 1700 50  0001 C CNN
+F 3 "" H 6300 1700 50  0001 C CNN
+	1    6300 1700
 	1    0    0    -1  
 $EndComp
-Text GLabel 7850 2250 0    50   BiDi ~ 0
+Text GLabel 6900 1900 0    50   BiDi ~ 0
 UART_RX
-Text GLabel 7850 2150 0    50   BiDi ~ 0
+Text GLabel 6900 1800 0    50   BiDi ~ 0
 UART_TX
-Text GLabel 7850 1950 0    50   BiDi ~ 0
-HW_RESET
 Wire Wire Line
-	7250 2050 7850 2050
+	6300 1700 6900 1700
 Wire Wire Line
 	4550 4550 4550 4650
 Wire Wire Line
 	4550 4650 4550 5450
 Connection ~ 4550 4650
 $Comp
-L Connector_Generic:Conn_01x04 J7
+L Connector_Generic:Conn_01x03 J7
 U 1 1 607590C9
-P 8050 2050
-F 0 "J7" H 8130 2042 50  0000 L CNN
-F 1 "Conn_01x04" H 8130 1951 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8050 2050 50  0001 C CNN
-F 3 "~" H 8050 2050 50  0001 C CNN
-	1    8050 2050
+P 7100 1800
+F 0 "J7" H 7180 1792 50  0000 L CNN
+F 1 "Conn_01x03" H 7180 1701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7100 1800 50  0001 C CNN
+F 3 "~" H 7100 1800 50  0001 C CNN
+	1    7100 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -358,9 +356,9 @@ Text GLabel 1150 6450 0    50   BiDi ~ 0
 BAT+
 Text GLabel 1150 6550 0    50   BiDi ~ 0
 BAT-
-Text GLabel 7650 3050 0    50   BiDi ~ 0
+Text GLabel 6700 2700 0    50   BiDi ~ 0
 BAT-
-Text GLabel 8150 3050 2    50   BiDi ~ 0
+Text GLabel 7200 2700 2    50   BiDi ~ 0
 BAT+
 Text Notes 4350 5050 0    50   ~ 0
 2 and 3 are shorted with no plug\n1 is center, center is positive
@@ -399,4 +397,51 @@ Wire Wire Line
 	1150 6450 1350 6450
 Wire Wire Line
 	1150 6550 1900 6550
+Text GLabel 8350 2300 0    50   BiDi ~ 0
+HW_RESET
+$Comp
+L power:GND #PWR0101
+U 1 1 621657AE
+P 8500 2650
+F 0 "#PWR0101" H 8500 2400 50  0001 C CNN
+F 1 "GND" H 8505 2477 50  0000 C CNN
+F 2 "" H 8500 2650 50  0001 C CNN
+F 3 "" H 8500 2650 50  0001 C CNN
+	1    8500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:1825232-1 S1
+U 1 1 6215EB45
+P 8750 2100
+F 0 "S1" H 9478 1946 50  0000 L CNN
+F 1 "1825232-1" H 9478 1855 50  0000 L CNN
+F 2 "18252321" H 9500 2200 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/1825232-1.pdf" H 9500 2100 50  0001 L CNN
+F 4 "TE CONNECTIVITY - 1825232-1 - SLIDE SWITCH, SPDT, 0.2A, 30VDC, SOLDER" H 9500 2000 50  0001 L CNN "Description"
+F 5 "3.7" H 9500 1900 50  0001 L CNN "Height"
+F 6 "655-1825232-1" H 9500 1800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/1825232-1?qs=kTKVN3NWb5FosGxaNC1%252BtA%3D%3D" H 9500 1700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 9500 1600 50  0001 L CNN "Manufacturer_Name"
+F 9 "1825232-1" H 9500 1500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8750 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2100 8500 2100
+Wire Wire Line
+	8750 2500 8500 2500
+Connection ~ 8500 2500
+Wire Wire Line
+	8500 2500 8500 2650
+NoConn ~ 8750 2400
+Wire Wire Line
+	8500 2100 8500 2200
+Wire Wire Line
+	8350 2300 8750 2300
+Wire Wire Line
+	8750 2200 8500 2200
+Connection ~ 8500 2200
+Wire Wire Line
+	8500 2200 8500 2500
 $EndSCHEMATC
